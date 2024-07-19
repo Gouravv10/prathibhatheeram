@@ -96,11 +96,11 @@ export default {
       { url: require("@/assets/ptf11.jpg") },
       { url: require("@/assets/ptf3.jpg") },
       { url: require("@/assets/ptf10.jpg") },
-      { url: require("@/assets/ptf5.jpg") },
-      { url: require("@/assets/ptf6.jpg") },
-      { url: require("@/assets/ptf7.jpg") },
-      { url: require("@/assets/ptf8.jpg") },
-      { url: require("@/assets/ptf9.jpg") },
+      { url: require("@/assets/ptf30.jpg") },
+      { url: require("@/assets/ptf6.1.jpg") },
+      { url: require("@/assets/ptf31.jpg") },
+      { url: require("@/assets/ptf33.jpg") },
+      { url: require("@/assets/ptf34.jpg") },
       { url: require("@/assets/ptf12.jpg") },
       { url: require("@/assets/ptf13.jpg") },
       { url: require("@/assets/ptf14.jpg") },
@@ -118,7 +118,13 @@ export default {
       { url: require("@/assets/ptf26.jpg") },
       { url: require("@/assets/ptf27.jpg") },
       { url: require("@/assets/ptf28.jpg") },
-      { url: require("@/assets/ptf29.jpg") }
+      { url: require("@/assets/ptf29.jpg") },
+      { url: require("@/assets/ptf5.jpg") },
+      { url: require("@/assets/ptf6.jpg") },
+      { url: require("@/assets/ptf7.jpg") },
+      { url: require("@/assets/ptf8.jpg") },
+      { url: require("@/assets/ptf9.jpg") }
+      
   
     ],
     currenturl: '',

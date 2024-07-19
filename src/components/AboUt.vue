@@ -52,8 +52,9 @@
       </div>
     </template>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
 .about-page {
-  font-family: Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 1.6;
 }
 

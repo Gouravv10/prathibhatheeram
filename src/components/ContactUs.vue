@@ -8,7 +8,9 @@
 <i class="fas fa-map-marker-alt"></i>
 <div class="info-text">
 <h4>Address</h4>
-<p>Your Address Here</p>
+<p>Our Library Building<br>
+Pattukulam,Pathirappally P.O<br>
+Alappuzha</p>
 </div>
 </div>
 <div class="info-item">
