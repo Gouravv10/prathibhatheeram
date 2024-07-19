@@ -9,10 +9,10 @@
         <div class="dialog-content">
           <i @click="dia=!dia" class="fa-regular fa-circle-xmark closebtn"></i>
           <div class="outbox">
-            <i @click="previousImage" class="fa-solid fa-chevron-left prvsbtn"></i>
-            <img :src="currenturl" class="popimg">
-            <div class=" nxtbtn">
-              <i @click="nextImage" class="fa-solid fa-chevron-right"></i>
+            <div class="image-navigation">
+              <i @click="prevImage" class="fa-solid fa-chevron-left nav-icon"></i>
+              <img :src="currenturl" class="popimg">
+              <i @click="nextImage" class="fa-solid fa-chevron-right nav-icon"></i>
             </div>
             <div>
             <div class="dialog-buttons me-4">
@@ -39,7 +39,7 @@
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  max-width: 80%;
+  max-width: 70%;
   height: 70vh;
   overflow: hidden;
 }
@@ -58,12 +58,16 @@
   background-size: contain;
   cursor: pointer;
 }
-.closebtn {
-margin-left: 99%;
-font-size: 1.7em;
-cursor: pointer;
+.image-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.nav-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 10px;
+}
 .dialog-buttons {
   padding-left: 10px;
   margin-left: 0%;
@@ -80,8 +84,8 @@ cursor: pointer;
   margin-left: 2%;
   padding-top: 5px;
   border-radius: 5px;
-  background-size:contain;  
-  overflow: hidden;
+   
+  
  }
  .prvsbtn {
   cursor: pointer;
@@ -234,9 +238,9 @@ export default {
         this.currenturl = this.images[this.currentIndex].url;
       }
     },
-    previousImage() {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
+    prevImage() {
+      if (this.images.length > 0) {
+        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
         this.currenturl = this.images[this.currentIndex].url;
       }
     },
