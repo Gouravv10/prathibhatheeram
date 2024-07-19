@@ -58,7 +58,7 @@
 }
 
 .background {
-  background:linear-gradient(120deg, rgba(86, 192, 250, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('C:\Users\HP\Desktop\vue\ptf\proj\src\assets\boybg.jpg');
+  background:linear-gradient(120deg, rgba(86, 192, 250, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('C:\Users\HP\Desktop\vue\ptf\proj\prathibhatheeram\src\assets\boybg.jpg');
   background-size: cover;
   min-height: 100vh;
   padding: 20px;

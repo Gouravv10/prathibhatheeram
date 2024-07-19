@@ -49,7 +49,7 @@
 <style scoped>
 
 .background {
-  background:linear-gradient(120deg, rgba(67, 168, 246, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('C:\Users\HP\Desktop\vue\ptf\proj\src\assets\cntus2.jpg');
+  background:linear-gradient(120deg, rgba(67, 168, 246, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('C:\Users\HP\Desktop\vue\ptf\proj\prathibhatheeram\src\assets\cntus2.jpg');
   background-size: cover;
   min-height: 100vh;
   padding: 50px;
@@ -59,7 +59,7 @@
 }
 
 .content {
-  background:linear-gradient(120deg, rgba(235, 237, 238, 0.30) 0%, rgba(67, 168, 246, 0.50)100%);
+  background:linear-gradient(120deg, rgba(235, 237, 238, 0.30) 0%, rgba(67, 168, 246, 0.60)100%);
     padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
