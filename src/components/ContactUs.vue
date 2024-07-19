@@ -65,20 +65,21 @@ Alappuzha</p>
     padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: 60%;
   width: 100%;
 }
 
 .title {
   text-align: center;
-  font-size: 28px;
+  
   margin-bottom: 30px;
   color: #333;
 }
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 30px;
 }
 
@@ -88,13 +89,13 @@ Alappuzha</p>
 }
 
 .info-item i {
-  font-size: 24px;
+  
   margin-right: 10px;
   color: #333;
 }
 
 .info-text h4 {
-  font-size: 18px;
+  
   margin-bottom: 5px;
   color: #333;
 }
@@ -121,7 +122,6 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -137,12 +137,29 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
 }
 
 button[type="submit"]:hover {
   background-color: #276cb7;
 }
+
+@media (min-width: 768px) {
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-item {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 50%;
+  }
+}
+
 </style>
 
 

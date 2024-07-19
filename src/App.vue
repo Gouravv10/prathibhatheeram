@@ -140,7 +140,7 @@ padding-bottom: 20px;
 
 
 .footerlogo{
-  width: 250px; 
+  width: 17%; 
  margin-left: 42%;
   object-fit: cover; 
   padding-top: 20px;
