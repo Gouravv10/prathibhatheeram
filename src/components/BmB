@@ -1,0 +1,41 @@
+<div v-for="image in images" :key="image"><img @click="viewimage(image.url)" :src="image.url" style="width: 450px; height: 350px; background-size:contain"></div>
+    <v-dialog v-model="dia"><div><img :src="currenturl" style="width: 1000px; height:auto; background-size:contain"></div></v-dialog>
+    <script>
+        export default{
+          data: () => ({
+            images:[{url:require("@/assets/ptf1.jpg")},{url:require("@/assets/ptf11.jpg")},{url:require("@/assets/ptf3.jpg")}],currenturl:'',dia:false}),
+        methods:{
+          viewimage(url){
+            this.currenturl=url
+            this.dia=true
+          }
+        }
+        }
+        </script>
+            <!-- <div><img src="../assets/ptf1.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf11.jpg" style="width: 450px; height: 350px;  background-size:contain"></div>
+    <div><img src="../assets/ptf3.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf10.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf5.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf6.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf7.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf8.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf9.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf12.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf13.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf14.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf15.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf16.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf17.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf18.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptfptf1719.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf20.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf21.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf22.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf23.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf24.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf25.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf26.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf27.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf28.jpg" style="width: 450px; height: 350px; background-size:contain"></div>
+    <div><img src="../assets/ptf29.jpg" style="width: 450px; height: 350px; background-size:contain"></div> -->
