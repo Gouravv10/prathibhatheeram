@@ -107,7 +107,7 @@
 }
 
 .navbar-image {
-  width: 1550px; 
+  width: 100%; 
   height: 100%; 
   object-fit: cover; 
 }
