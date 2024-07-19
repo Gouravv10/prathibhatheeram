@@ -9,7 +9,7 @@
 <div class="info-text">
 <h4>Address</h4>
 <p>Our Library Building<br>
-Pattukulam,Pathirappally P.O<br>
+Pattukulam<br>Pathirappally P.O<br>
 Alappuzha</p>
 </div>
 </div>
@@ -17,7 +17,7 @@ Alappuzha</p>
 <i class="fas fa-envelope"></i>
 <div class="info-text">
 <h4>Email</h4>
-<p><a href="mailto:foundation.prathibhatheeram@gmail.com">foundation.prathibhatheeram@gmail.com</a></p>
+<p><a href="mailto:foundation.prathibhatheeram@gmail.com">click here</a></p>
 </div>
 </div>
 <div class="info-item">
@@ -31,16 +31,16 @@ Alappuzha</p>
 <form class="contact-form">
           <h4>Send Us a Message</h4>
           <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit">Send Message</button>
 </form>
@@ -62,11 +62,11 @@ Alappuzha</p>
 
 .content {
   background:linear-gradient(120deg, rgba(235, 237, 238, 0.30) 0%, rgba(67, 168, 246, 0.60)100%);
-   padding: 30px;
+    padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  width: 100%;
+  max-width: 90%;
+  width: 80%;
 }
 
 .title {
@@ -110,11 +110,10 @@ Alappuzha</p>
 
 .form-group {
   margin-bottom: 20px;
-  display: flex;
 }
 
 label {
-  display: flex;
+  font-weight: bold;
   color: #333;
 }
 

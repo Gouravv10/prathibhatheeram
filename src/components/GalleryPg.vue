@@ -87,7 +87,7 @@ cursor: pointer;
   cursor: pointer;
   font-size: 1.2em;
   align-self: center;
- 
+  margin-right: 14px;
 }
 .nxtbtn {
   cursor: pointer;
