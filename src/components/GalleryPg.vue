@@ -47,8 +47,9 @@
   background-image: radial-gradient(circle at 75% 26%, rgba(116, 116, 116, 0.04) 0%, rgba(116, 116, 116, 0.04) 50%, rgba(222, 222, 222, 0.04) 50%, rgba(222, 222, 222, 0.04) 100%), radial-gradient(circle at 62% 63%, rgba(60, 60, 60, 0.04) 0%, rgba(60, 60, 60, 0.04) 50%, rgba(152, 152, 152, 0.04) 50%, rgba(152, 152, 152, 0.04) 100%), radial-gradient(circle at 80% 64%, rgba(108, 108, 108, 0.04) 0%, rgba(108, 108, 108, 0.04) 50%, rgba(252, 252, 252, 0.04) 50%, rgba(252, 252, 252, 0.04) 100%), radial-gradient(circle at 97% 83%, rgba(184, 184, 184, 0.04) 0%, rgba(184, 184, 184, 0.04) 50%, rgba(137, 137, 137, 0.04) 50%, rgba(137, 137, 137, 0.04) 100%), radial-gradient(circle at 60% 7%, rgba(69, 69, 69, 0.04) 0%, rgba(69, 69, 69, 0.04) 50%, rgba(211, 211, 211, 0.04) 50%, rgba(211, 211, 211, 0.04) 100%), linear-gradient(90deg, rgb(212, 245, 239), rgb(118, 205, 245));
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
 }
 .image-thumbnail {
   width: 100%;
