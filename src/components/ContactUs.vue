@@ -51,7 +51,7 @@ Alappuzha</p>
 <style scoped>
 
 .background {
-  background:linear-gradient(120deg, rgba(67, 168, 246, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('C:\Users\HP\Desktop\vue\ptf\proj\prathibhatheeram\src\assets\cntus2.jpg');
+  background:linear-gradient(120deg, rgba(67, 168, 246, 0.7) 0%, rgba(235, 237, 238, 0.7) 100%), url('@/assets/cntus2.jpg');
   background-size: cover;
   min-height: 100vh;
   padding: 50px;
