@@ -2,7 +2,7 @@
  
   <div class="d-flex flex-wrap gap-5 imgcard">
     <div v-for="image in images" :key="image.url">
-      <img @click="viewimage(image.url)" :src="image.url" style="width: 450px; height: 350px; background-size: contain" />
+      <img @click="viewimage(image.url)" :src="image.url" class="image-thumbnail" />
     </div>
     <v-dialog v-model="dia" max-width="1020px" class="dialog">
       <template v-slot>
@@ -11,14 +11,17 @@
           <div class="outbox">
             <i @click="previousImage" class="fa-solid fa-chevron-left prvsbtn"></i>
             <img :src="currenturl" class="popimg">
+            <div class=" nxtbtn">
+              <i @click="nextImage" class="fa-solid fa-chevron-right"></i>
+            </div>
             <div>
             <div class="dialog-buttons me-4">
             <i @click="downloadImage" class="fa-sharp fa-solid fa-download mb-3" ></i>
             <i @click="shareImage" class="fa-sharp fa-solid fa-share-nodes"></i>
           </div>
-          <div class=" nxtbtn">
-            <i @click="nextImage" class="fa-solid fa-chevron-right"></i>
-          </div>
+          
+            
+          
           </div>
          
         </div>
@@ -31,14 +34,14 @@
 <style scoped>
 .outbox {
   display: flex;
-  background-image: radial-gradient(circle at top right, rgb(6, 134, 232) 0%, rgb(86, 172, 233) 13%,rgb(122, 192, 245) 13%, rgb(76, 166, 234) 23%,rgb(103, 176, 232) 23%, rgb(103, 176, 232) 33%,rgb(130, 185, 231) 33%, rgb(135, 196, 245) 46%,rgb(182,233,246) 46%, rgb(182,233,246) 48%,rgb(175,217,240) 48%, rgb(175,217,240) 63%,rgb(189,223,248) 63%, rgb(83, 172, 235) 83%,rgb(115, 189, 242) 83%, rgb(29, 174, 246) 100%);
+  background-image: radial-gradient(circle at top right, rgb(6, 134, 232) 0%, rgb(86, 172, 233) 13%, rgb(122, 192, 245) 13%, rgb(76, 166, 234) 23%, rgb(103, 176, 232) 23%, rgb(103, 176, 232) 33%, rgb(130, 185, 231) 33%, rgb(135, 196, 245) 46%, rgb(182, 233, 246) 46%, rgb(182, 233, 246) 48%, rgb(175, 217, 240) 48%, rgb(175, 217, 240) 63%, rgb(189, 223, 248) 63%, rgb(83, 172, 235) 83%, rgb(115, 189, 242) 83%, rgb(29, 174, 246) 100%);
   padding: 20px;
-  margin-left: 10%;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  max-width: 785px;
-  height: 590px;
-
+  max-width: 80%;
+  height: 70vh;
+  overflow: hidden;
 }
 .imgcard {
   background-image: radial-gradient(circle at 75% 26%, rgba(116, 116, 116, 0.04) 0%, rgba(116, 116, 116, 0.04) 50%, rgba(222, 222, 222, 0.04) 50%, rgba(222, 222, 222, 0.04) 100%), radial-gradient(circle at 62% 63%, rgba(60, 60, 60, 0.04) 0%, rgba(60, 60, 60, 0.04) 50%, rgba(152, 152, 152, 0.04) 50%, rgba(152, 152, 152, 0.04) 100%), radial-gradient(circle at 80% 64%, rgba(108, 108, 108, 0.04) 0%, rgba(108, 108, 108, 0.04) 50%, rgba(252, 252, 252, 0.04) 50%, rgba(252, 252, 252, 0.04) 100%), radial-gradient(circle at 97% 83%, rgba(184, 184, 184, 0.04) 0%, rgba(184, 184, 184, 0.04) 50%, rgba(137, 137, 137, 0.04) 50%, rgba(137, 137, 137, 0.04) 100%), radial-gradient(circle at 60% 7%, rgba(69, 69, 69, 0.04) 0%, rgba(69, 69, 69, 0.04) 50%, rgba(211, 211, 211, 0.04) 50%, rgba(211, 211, 211, 0.04) 100%), linear-gradient(90deg, rgb(212, 245, 239), rgb(118, 205, 245));
@@ -47,7 +50,14 @@
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
+.image-thumbnail {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  max-height: 350px;
+  background-size: contain;
+  cursor: pointer;
+}
 .closebtn {
 margin-left: 99%;
 font-size: 1.7em;
@@ -65,12 +75,13 @@ cursor: pointer;
 }
  .popimg{
   display: flex;
-  width: 690px; 
+  max-width: 80%;
   height: auto; 
   margin-left: 2%;
   padding-top: 5px;
   border-radius: 5px;
   background-size:contain;  
+  overflow: hidden;
  }
  .prvsbtn {
   cursor: pointer;
@@ -83,11 +94,91 @@ cursor: pointer;
   font-size: 1.2em;
   align-self: center;
   margin-left: 14px;
-  margin-top: 186px;
+  
   
 }
+@media (max-width: 1200px) {
+  .imgcard {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 
+  .image-thumbnail {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .imgcard {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .image-thumbnail {
+    max-width: 350px;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgcard {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .image-thumbnail {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .outbox {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .popimg {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .imgcard {
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .image-thumbnail {
+    max-width: 250px;
+    max-height: 150px;
+  }
+
+  .outbox {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .popimg {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .prvsbtn, .nxtbtn {
+    font-size: 1em;
+  }
+
+  .closebtn {
+    margin-left: 95%;
+    font-size: 1.5em;
+  }
+
+  .dialog-buttons {
+    font-size: 1em;
+  }
+}
 </style>
+
 <script>
 export default {
   data: () => ({

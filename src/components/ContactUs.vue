@@ -62,10 +62,10 @@ Alappuzha</p>
 
 .content {
   background:linear-gradient(120deg, rgba(235, 237, 238, 0.30) 0%, rgba(67, 168, 246, 0.60)100%);
-    padding: 30px;
+   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  max-width: 60%;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -110,10 +110,11 @@ Alappuzha</p>
 
 .form-group {
   margin-bottom: 20px;
+  display: flex;
 }
 
 label {
-  font-weight: bold;
+  display: flex;
   color: #333;
 }
 
@@ -156,7 +157,7 @@ button[type="submit"]:hover {
 
 @media (min-width: 1024px) {
   .content {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
 
