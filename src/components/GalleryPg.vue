@@ -1,6 +1,6 @@
 <template>
  
-  <div class="d-flex flex-wrap gap-5 imgcard">
+  <div class="d-flex flex-wrap imgcard">
     <div v-for="image in images" :key="image.url">
       <img @click="viewimage(image.url)" :src="image.url" class="image-thumbnail" />
     </div>
@@ -50,6 +50,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
+  gap: 50px;
 }
 .image-thumbnail {
   width: 100%;
@@ -106,6 +107,7 @@
   .imgcard {
     padding-top: 30px;
     padding-bottom: 30px;
+    gap: 50px;
   }
 
   .image-thumbnail {
@@ -118,6 +120,7 @@
   .imgcard {
     padding-top: 30px;
     padding-bottom: 30px;
+    gap: 50px;
   }
 
   .image-thumbnail {
@@ -130,6 +133,7 @@
   .imgcard {
     padding-top: 30px;
     padding-bottom:30px;
+    gap: 30px;
   }
 
   .image-thumbnail {
@@ -152,6 +156,7 @@
   .imgcard {
     padding-top: 30px;
     padding-bottom: 30px;
+    gap: 20px;
   }
 
   .image-thumbnail {
