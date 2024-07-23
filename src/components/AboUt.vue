@@ -52,9 +52,11 @@
       </div>
     </template>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .about-page {
-  font-family: "Oswald", sans-serif;
+  font-family:  "Merriweather", serif;
+  font-weight: 300;
+  font-style: regular;
   line-height: 1.6;
 }
 
@@ -98,7 +100,7 @@
 
 ul {
   list-style-type: disc;
-  margin-left: 20px;
+  
   color: #555;
 }
 
