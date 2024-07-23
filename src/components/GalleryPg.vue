@@ -103,6 +103,10 @@
   
   
 }
+.closebtn {
+    margin-left: 95%;
+    font-size: 1.5em;
+  }
 @media (max-width: 1200px) {
   .imgcard {
     padding-top: 30px;
@@ -150,6 +154,10 @@
     width: 100%;
     margin-left: 0;
   }
+  .closebtn {
+    margin-left: 95%;
+    font-size:auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -180,7 +188,7 @@
 
   .closebtn {
     margin-left: 95%;
-    font-size: 1.5em;
+    font-size: auto;
   }
 
   .dialog-buttons {
