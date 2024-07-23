@@ -104,8 +104,8 @@
 }
 @media (max-width: 1200px) {
   .imgcard {
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .image-thumbnail {
@@ -116,8 +116,8 @@
 
 @media (max-width: 992px) {
   .imgcard {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .image-thumbnail {
@@ -128,8 +128,8 @@
 
 @media (max-width: 768px) {
   .imgcard {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom:30px;
   }
 
   .image-thumbnail {
@@ -150,8 +150,8 @@
 
 @media (max-width: 576px) {
   .imgcard {
-    padding-top: 5px;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .image-thumbnail {
