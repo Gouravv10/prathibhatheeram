@@ -174,6 +174,18 @@ button[type="submit"]:hover {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .content{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width:576px) {
+  .content{
+    width: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 
 
